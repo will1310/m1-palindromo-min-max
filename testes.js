@@ -168,8 +168,7 @@ function createMinMaxCard({id, array, min, max}){
 }
 function createMinMaxTestCard({id, array, min, max}){
     let retorno = arrayMaxMin(array);
-    console.log(retorno);
-    let isExpectedReturn = retorno[0] == min && retorno[1] == max;
+    let isExpectedReturn = retorno[0] == min && retorno[1] == max && retorno.length == 2;
     let template = `<tr id="teste_${id}">
         <th scope="row">${id}</th>
         <td>[${array.toString()}]</td>
